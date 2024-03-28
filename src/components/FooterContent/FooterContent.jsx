@@ -27,9 +27,10 @@ const FooterContent = () => {
                         <a href="#" className="footer__link">Контакты</a>
                     </div>
                     <div className = "footer__item">
-                        <p className = "footer__text">Условия сервиса</p>
+                    <a href="#" className="footer__link footer__link--conditions">Условия сервиса</a>
                         <div className="languages">
                             <img className= "language" src={languageImage} alt="#languageImage" />
+                            <p className= "language">Каз</p>
                             <p className= "language language--active">Рус</p>
                             <p className= "language">Eng</p>
                         </div>

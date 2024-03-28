@@ -3,20 +3,13 @@ import HeaderContent from "../HeaderContent/HeaderContent.jsx";
 
 import './HeadphonesProduct.css';
 
-import cartProducts from '../../cart_products.js';
+import cartProducts from '../../features/cart_products.js';
 
 import star from "../../images/main/star.svg";
 
-
 const HeadphonesProduct = ({product}) => {
-    const [counter, setCounter] = useState(0);
-
-    const loadCounter = () => {
-        setCounter(counter + 1);
-      };
 
     const buyClick = () => {
-        loadCounter();
         if (!cartProducts.some(item => item.img === product.img)) {
             cartProducts.push(product);
         }
@@ -43,7 +36,7 @@ const HeadphonesProduct = ({product}) => {
             <div className="headphones__column">
                 <p className="price">{product.price} ₽</p>
                 <p style={{ display: product.discountStatus}} className="discount">{product.oldPrice} ₽</p>
-                <button className="btn__buy" onClick={buyClick}  >Купить</button>
+                <button className="btn__buy" onClick={buyClick}>Купить</button>
             </div>
         </div>
     </div>

@@ -26,6 +26,7 @@ header {
     padding: 20px;
 
     position: relative;
+
 }
 
 .header__counter {
@@ -43,4 +44,5 @@ header {
     top: 12px;
     right: 10px;
     z-index: 1;
+
 }

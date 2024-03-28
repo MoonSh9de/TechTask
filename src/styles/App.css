@@ -5,25 +5,11 @@
 }
 
 body {
+    min-height: 100vh;
+
+    padding-bottom: 150px;
+
     background-color: #eaeaea;
-}
+    position: relative;
 
-main {
-    padding: 0 17px;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-
-    width: 100vw;
-    height: 58px;
-
-    padding: 0 15px;
-
-    background: lightblue ;
-}
-
-.navbar__links {
-    margin-left: auto;
 }

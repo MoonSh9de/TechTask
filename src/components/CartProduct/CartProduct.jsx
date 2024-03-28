@@ -2,7 +2,7 @@ import React from "react";
 
 import './CartProduct.css'
 
-import cartProducts from '../../cart_products.js'
+import cartProducts from '../../features/cart_products.js'
 
 import plusImage from "../../images/cart_main/plus.svg"
 import minusImage from "../../images/cart_main/minus.svg"
@@ -17,9 +17,13 @@ const CartProduct = (props) => {
             <div className="product__info">
                 <img className="product__image" src={cartProduct.img} alt="" />
                 <div className="quantity">
-                    <img src={minusImage} alt="" />
+                    <button className="btn__decrement">
+                        <img src={minusImage} alt="" />
+                    </button>
                     <span className="quantity__number">1</span>
-                    <img  src={plusImage} alt="" />
+                    <button className="btn__increment">
+                        <img src={plusImage} alt="" />
+                    </button>
                 </div>
             </div>
             <div className="product__about">
@@ -29,7 +33,9 @@ const CartProduct = (props) => {
         </div>
         <div className="product__column product__column--second">
             <div className="product__delete" >
-                <img src={deleteImage} alt="" />
+                <button className="btn__delete">
+                    <img src={deleteImage} alt="" />
+                </button>
             </div>
             <p className="product__result">2 927 ₽</p>
         </div>

@@ -21,7 +21,10 @@ const HeaderContent = () => {
                 </Link>
                 <div className="header__items">
                     <div className="header__item header__item--favorite">
-                        <img style={{ marginBottom: '5px' }} src={favoriteImage} />
+                        <Link to="/general">
+
+                            <img style={{ marginBottom: '5px' }} src={favoriteImage} />
+                        </Link>
                         <p className="header__counter header__counter--favorite">4</p>
                     </div>
                     <div className='header__item'>
@@ -29,7 +32,7 @@ const HeaderContent = () => {
                             <img src={cartImage} />
                         </Link>
 
-                        <p className="header__counter header__counter--cart"></p>
+                        <p className="header__counter header__counter--cart" id="cartCounter">4</p>
                     </div>
 
                 </div>

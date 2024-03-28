@@ -8,7 +8,8 @@
     display: flex;
     justify-content: space-between;
 
-    width: 100%;
+    width: 1110px;
+    height: 150px;
 
     margin-top: auto;
     padding: 29px;
@@ -19,11 +20,8 @@
 
     font-family: 'MontserratRegular';
     font-size: 17px;
-    /* position: absolute;
+    position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 150px;
-    margin-top: -150px; */
 
 
 }
@@ -41,15 +39,18 @@
     color: #000;
     text-decoration: none;
 
+    transition: transform 0.3s ease;
+
 }
 
-.footer__text {
+
+.footer__link--conditions {
     margin-bottom: 36px;
 }
 
 .footer__link:hover {
-    text-decoration: underline;
     color: #ffa542;
+    transform: scale(1.1);
 }
 .languages {
     display: flex;
@@ -72,8 +73,13 @@
 
 .social {
     margin-right: 18px;
+
+    transition: transform 0.1s ease;
 }
 
+.social:hover {
+    transform: scale(1.1);
+}
 .social:last-child {
     margin: 0;
 }

@@ -53,4 +53,5 @@
 .cart__btn:hover {
     background-color:#ffa542;
     color: #101010;
+    cursor: pointer;
 }

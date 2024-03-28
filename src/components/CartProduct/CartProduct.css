@@ -60,3 +60,11 @@
 .quantity__number {
     margin: 0 25px;
 }
+
+.btn__decrement,
+.btn__increment,
+.btn__delete {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}

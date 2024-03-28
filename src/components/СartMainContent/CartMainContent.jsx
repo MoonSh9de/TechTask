@@ -4,7 +4,7 @@ import CartList from "../CartList/CartList";
 
 import "./CartMainContent.css"
 
-import cartProducts from "../../cart_products.js";
+import cartProducts from "../../features/cart_products.js";
 
 
 const CartMainContent = () => {
