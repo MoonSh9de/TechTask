@@ -1,0 +1,62 @@
+.product {
+    display: flex;
+    justify-content: space-between;
+
+    width: 633px;
+    height: 218px;
+
+    margin-bottom: 20px;
+    padding: 18px 28px 21px 19px;
+
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+.product__column--first {
+    display: flex;
+    align-items: center;
+}
+.product__column--second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.product__info {
+    margin-right: 24px;
+}
+
+.product__name {
+    margin-bottom: 12px;
+
+    font-family: "MontserratMedium";
+}
+
+.product__price {
+    color: #aaa;
+}
+
+
+.product__image {
+    width: 146px;
+    height: 136px;
+
+    margin-bottom: 19px;
+}
+
+.product__delete {
+    text-align: right;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+
+    margin-left: 14px;
+}
+
+.quantity__number {
+    margin: 0 25px;
+}

@@ -1,0 +1,85 @@
+.headphones__item {
+    width: 350px;
+    height: 407px;
+
+    margin-bottom: 30px;
+    padding: 15px 20px 27px;
+
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+    font-family: "MontserratSemiBold";
+    font-size: 17px;
+}
+.headphones__column {
+    position: relative;
+}
+.headphones__about {
+    display: flex;
+    justify-content: space-between;
+}
+.headphones__name {
+    margin-bottom: 25px;
+
+    color: #1c1c27;
+}
+
+.headphones__image {
+    width: 220px;
+    height: 237px;
+
+    margin: 0  auto 54px;
+    text-align: center;
+
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating__text {
+    margin-left: 10px;
+    color: #838383;
+}
+
+.price {
+    margin-bottom: 32px;
+
+    color: #ffa542;
+}
+
+.discount {
+    color: #ffce7f;
+
+    font-size: 13px;
+    text-decoration: line-through;
+
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    z-index: 1;
+}
+
+.btn__buy {
+    padding: 0;
+
+    background-color: transparent;
+    border: 0;
+
+    font-size: 17px;
+    font-family: "MontserratSemiBold";
+    color: #000;
+}
+
+.btn__buy:hover {
+    text-decoration: underline;
+    color: #ffa542;
+}
+
+
+.headphones__image--inner {
+    width: 100%;
+    height: 100%;
+}
