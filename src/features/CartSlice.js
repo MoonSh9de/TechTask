@@ -1,6 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { makeSelectProductById } from "./selectors";
-import { useSelector } from "react-redux";
 
 const initialState = {
     items: [],
@@ -19,15 +17,15 @@ const cartSlice = createSlice({
                 (item) => item.id === id
             );
             if (existingItemIndex !== -1) {
-                // Если продукт уже есть в корзине, увеличиваем его количество
+
                 state.items[existingItemIndex].amount += 1;
             } else {
-                // Если продукта еще нет в корзине, добавляем его
+
                 state.items.push({ id, amount: 1 });
             }
             state.itemsAmount += 1;
         },
-        // Удаление продукта из корзины
+
         removeItemFromCart(state, {payload}) {
             const itemIndex = state.items.findIndex((item) => item.id === payload);
             state.itemsAmount -= state.items[itemIndex].amount;
@@ -35,7 +33,7 @@ const cartSlice = createSlice({
                 state.items.splice(itemIndex, 1);
             }
         },
-        increaseItemCount(state, { payload }) {
+        increaseItem(state, { payload }) {
             const itemIndex = state.items.findIndex(
                 (item) => item.id === payload
             );
@@ -44,7 +42,7 @@ const cartSlice = createSlice({
             }
             state.itemsAmount += 1;
         },
-        decreaseItemCount(state, { payload }) {
+        decreaseItem(state, { payload }) {
             const itemIndex = state.items.findIndex(
                 (item) => item.id === payload
             );
@@ -63,7 +61,7 @@ export default cartSlice.reducer;
 export const {
     addItemToCart,
     removeItemFromCart,
-    increaseItemCount,
-    decreaseItemCount,
+    increaseItem,
+    decreaseItem,
     updateTotal,
 } = cartSlice.actions;

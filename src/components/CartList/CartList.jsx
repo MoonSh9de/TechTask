@@ -1,12 +1,16 @@
-import React from "react";
-import CartProduct from "../CartProduct/CartProduct.jsx"
+import React, { useMemo } from "react";
+import CartProduct from "../CartProduct/CartProduct"
 
-const CartList = (props) => {
-    const cartProducts = Array.isArray(props.cartProducts) ? props.cartProducts : [];
+import { useSelector } from "react-redux";
+
+import { makeSelectFilteredProducts } from "../../features/selectors";
+
+const CartList = ({products}) => {
+
     return (
         <div className="cart__column">
-            {cartProducts.map(cartProduct => (
-                <CartProduct key={cartProduct.id} cartProduct = {cartProduct}/>
+            {products.map(products => (
+                <CartProduct key={products.id} cartProduct={products}/>
             ))}
         </div>
 

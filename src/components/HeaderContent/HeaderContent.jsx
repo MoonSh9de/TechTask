@@ -8,11 +8,14 @@ import HeadphonesCard from "../HeadphonesProduct/HeadphonesProduct.jsx";
 import Container from "../Container/Container";
 
 import favoriteImage from "../../images/header/favorite.svg";
-import cartImage from "../../images/header/cart.svg";
 
 
+import { useSelector } from 'react-redux'
+import CartButton from "../UI/CartButton.jsx";
 
 const HeaderContent = () => {
+     const cartAmount = useSelector(state => state.cart ? state.cart.itemsAmount : 0);
+
     return (
         <Container>
             <header>
@@ -22,18 +25,11 @@ const HeaderContent = () => {
                 <div className="header__items">
                     <div className="header__item header__item--favorite">
                         <Link to="/general">
-
                             <img style={{ marginBottom: '5px' }} src={favoriteImage} />
                         </Link>
                         <p className="header__counter header__counter--favorite">4</p>
                     </div>
-                    <div className='header__item'>
-                        <Link to="/cart">
-                            <img src={cartImage} />
-                        </Link>
-
-                        <p className="header__counter header__counter--cart" id="cartCounter">4</p>
-                    </div>
+                    <CartButton counter={cartAmount}></CartButton>
 
                 </div>
             </header>

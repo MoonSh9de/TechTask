@@ -23,7 +23,7 @@ const FooterContent = () => {
 
                     <div className="footer__item">
                         <a href="#" className="footer__link">Избранное</a>
-                        <a href="#" className="footer__link">Корзина</a>
+                        <Link to="/cart" className="footer__link">Корзина</Link>
                         <a href="#" className="footer__link">Контакты</a>
                     </div>
                     <div className = "footer__item">

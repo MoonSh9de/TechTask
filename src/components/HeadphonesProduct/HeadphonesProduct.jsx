@@ -1,24 +1,18 @@
 import React, {useRef, useState} from "react";
-import HeaderContent from "../HeaderContent/HeaderContent.jsx";
+import HeaderContent from "../HeaderContent/HeaderContent";
 
 import './HeadphonesProduct.css';
 
-import cartProducts from '../../features/cart_products.js';
+
+import { useDispatch } from "react-redux";
+import { addItemToCart, calculateTotal } from "../../features/CartSlice.js";
+
 
 import star from "../../images/main/star.svg";
 
 const HeadphonesProduct = ({product}) => {
+    const dispatch = useDispatch();
 
-    const buyClick = () => {
-        if (!cartProducts.some(item => item.img === product.img)) {
-            cartProducts.push(product);
-        }
-        else {
-
-        }
-        console.log(product);
-        console.log(cartProducts)
-    };
 
     return (
         <div className="headphones__item">
@@ -36,7 +30,7 @@ const HeadphonesProduct = ({product}) => {
             <div className="headphones__column">
                 <p className="price">{product.price} ₽</p>
                 <p style={{ display: product.discountStatus}} className="discount">{product.oldPrice} ₽</p>
-                <button className="btn__buy" onClick={buyClick}>Купить</button>
+                <button className="btn__buy" /*onClick={buyClick} */ onClick = {() => dispatch(addItemToCart({id: product.id}))}>Купить</button>
             </div>
         </div>
     </div>
