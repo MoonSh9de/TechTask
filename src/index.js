@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import General from './pages/General';
+import App from './scripts/App';
 
 
 

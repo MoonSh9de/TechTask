@@ -1,0 +1,17 @@
+.logo {
+    margin-bottom: 1rem;
+
+    font-family: "MontserratBold";
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #101010;
+
+    transition: 0.1s color linear;
+}
+
+.logo:hover {
+    color: #ffa542;
+}
+.logo__title {
+    font-size: 2.5rem;
+}

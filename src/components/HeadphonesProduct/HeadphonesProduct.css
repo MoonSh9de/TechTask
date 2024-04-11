@@ -2,15 +2,15 @@
     width: 350px;
     height: 407px;
 
-    margin-bottom: 30px;
-    padding: 15px 20px 27px;
+    margin-bottom: 3rem;
+    padding: 1.5rem 2rem 2.7rem;
 
     background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 3rem;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
 
     font-family: "MontserratSemiBold";
-    font-size: 17px;
+    font-size: 1.7rem;
 
     transition: transform 0.3s ease;
 }
@@ -21,6 +21,7 @@
 .headphones__column {
     position: relative;
 }
+
 .headphones__about {
     display: flex;
     justify-content: space-between;
@@ -35,7 +36,7 @@
     width: 220px;
     height: 237px;
 
-    margin: 0  auto 54px;
+    margin: 0  auto 5.4rem;
     text-align: center;
 
 }
@@ -46,25 +47,26 @@
 }
 
 .rating__text {
-    margin-left: 10px;
+    margin-left: 1rem;
     color: #838383;
 }
 
 .price {
-    margin-bottom: 32px;
+    margin-bottom: 3.2rem;
 
     color: #ffa542;
 }
 
-.discount {
+.oldprice {
     color: #ffce7f;
 
-    font-size: 13px;
+    font-size: 1.3rem;
     text-decoration: line-through;
 
     position: absolute;
-    top: 20px;
-    left: 5px;
+    top: 2rem;
+    left: 0.5em;
+
     z-index: 1;
 }
 
@@ -74,7 +76,7 @@
     background-color: transparent;
     border: 0;
 
-    font-size: 17px;
+    font-size: 1.7rem;
     font-family: "MontserratSemiBold";
     color: #000;
 }

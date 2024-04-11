@@ -1,6 +1,9 @@
 .headphones__title {
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
+
+    font-size: 2rem;
     font-family: "MontserratSemiBold";
     color: #838383;
 }
+
 

@@ -1,0 +1,92 @@
+@media (max-width: 1100px) {
+    /*MainContent*/
+    .headphones {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 3rem;
+    }
+
+    .headphones__item {
+        width: 29vw;
+        height: 370px;
+        margin-bottom: calc(-15px + 5vw);
+
+        font-size: 1.4rem;
+    }
+
+    .oldprice{
+        font-size: 1.1rem;
+    }
+    .headphones__image {
+        width: 200px;
+        height: 217px;
+    }
+
+    .btn__buy {
+        font-size: 1.4rem;
+    }
+    .footer {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+}
+@media (max-width: 900px) {
+    .headphones__item {
+        width: 44vw;
+        margin-bottom: calc(-15px + 6vw);
+    }
+}
+
+@media (max-width: 700px) {
+    .headphones__item {
+        width: 42vw;
+        margin-bottom: calc(6vw);
+
+        font-size: 1.2rem;
+    }
+
+    .oldprice{
+        font-size: 0.95rem;
+    }
+
+    .footer {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .headphones__item {
+        width: 100vw;
+
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+    }
+    .oldprice{
+        font-size: 1.2rem;
+    }
+
+    .btn__buy {
+        font-size: 1.5rem;
+    }
+
+    body {
+        padding-bottom: 300px;
+
+
+    }
+    .footer {
+        height: 300px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        font-size: 1.5rem;
+    }
+    .footer__item {
+        margin-bottom: 1.5rem;
+    }
+}

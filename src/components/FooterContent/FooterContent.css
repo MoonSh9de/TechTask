@@ -10,7 +10,6 @@
 
     width: 1110px;
     height: 150px;
-
     margin-top: auto;
     padding: 29px;
 
@@ -23,13 +22,11 @@
     position: absolute;
     bottom: 0;
 
-
 }
 
 .footer__socials {
     display: flex;
     align-items: center;
-
 }
 
 .footer__link {

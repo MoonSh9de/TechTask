@@ -4,8 +4,6 @@ import CartList from "../CartList/CartList";
 
 import "./CartMainContent.css"
 
-import cartProducts from "../../features/cart_products.js";
-
 
 const CartMainContent = () => {
 
@@ -14,8 +12,8 @@ const CartMainContent = () => {
             <main>
                 <h2 className="cart__title">Корзина</h2>
                 <section className="cart__content">
-                    <CartList cartProducts = {cartProducts}/>
-
+                    <CartList cartProducts = {[]}/>
+                        
                     <div className="cart__column">
                         <div className="formalization">
                             <div className="cart__result">

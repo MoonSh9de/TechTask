@@ -1,9 +1,13 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 
-import './FooterContent.css';
-import Container from "../Container/Container";
+//Components
+import Logo from "../UI/LogoUI/Logo";
 
+//Css
+import './FooterContent.css';
+
+//Images
 import languageImage from "../../images/footer/language.svg";
 import vkImage from "../../images/footer/vk.svg";
 import tgImage from "../../images/footer/telegram.svg";
@@ -15,9 +19,7 @@ const FooterContent = () => {
             <div className="container--footer">
                 <footer className="footer">
                     <div className="footer__item">
-                    <Link to="/general" className="logo"  id="logo">
-                        <h2>Qpick</h2>
-                    </Link>
+                    <Logo/>
 
                     </div>
 

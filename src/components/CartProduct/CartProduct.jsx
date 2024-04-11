@@ -2,8 +2,6 @@ import React from "react";
 
 import './CartProduct.css'
 
-import cartProducts from '../../features/cart_products.js'
-
 import plusImage from "../../images/cart_main/plus.svg"
 import minusImage from "../../images/cart_main/minus.svg"
 import deleteImage from "../../images/cart_main/delete.svg"

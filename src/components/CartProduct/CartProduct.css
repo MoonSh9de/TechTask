@@ -5,12 +5,12 @@
     width: 633px;
     height: 218px;
 
-    margin-bottom: 20px;
-    padding: 18px 28px 21px 19px;
+    margin-bottom: 2rem;
+    padding: 1.8rem 2.8rem 2.1rem 1.9rem;
 
     background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 3rem;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
 }
 .product__column--first {
     display: flex;
@@ -23,29 +23,24 @@
 
 }
 
-
 .product__info {
-    margin-right: 24px;
+    margin-right: 2.4rem;
 }
 
 .product__name {
-    margin-bottom: 12px;
-
+    margin-bottom: 1.2rem;
     font-family: "MontserratMedium";
 }
-
 .product__price {
     color: #aaa;
 }
-
 
 .product__image {
     width: 146px;
     height: 136px;
 
-    margin-bottom: 19px;
+    margin-bottom: 1.9rem;
 }
-
 .product__delete {
     text-align: right;
 }
@@ -54,11 +49,11 @@
     display: flex;
     align-items: center;
 
-    margin-left: 14px;
+    margin-left: 1.4rem;
 }
 
 .quantity__number {
-    margin: 0 25px;
+    margin: 0 2.5rem;
 }
 
 .btn__decrement,

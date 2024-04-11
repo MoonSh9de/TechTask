@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './styles/App.css'
 import { BrowserRouter, Link, Route, Routes, Navigate} from 'react-router-dom';
 
-import General from './pages/General';
-import Cart from './pages/Cart';
-import HeaderContent from './components/HeaderContent/HeaderContent'
-import FooterContent from './components/FooterContent/FooterContent'
+import General from '../pages/General';
+import Cart from '../pages/Cart';
+
+import '../styles/main.css'
+import '../styles/adaptiv.css'
 
 function App() {
 	return (

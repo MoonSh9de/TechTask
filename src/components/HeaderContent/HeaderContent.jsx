@@ -1,12 +1,15 @@
 import React, { useRef } from "react";
 import { Link } from 'react-router-dom';
-
-import './HeaderContent.css';
-import '../../styles/fonts.css'
-
+//Components
 import HeadphonesCard from "../HeadphonesProduct/HeadphonesProduct.jsx";
 import Container from "../Container/Container";
 
+import Logo from "../UI/LogoUI/Logo.jsx";
+//Css
+import './HeaderContent.css';
+import '../../styles/fonts.css'
+
+//Images
 import favoriteImage from "../../images/header/favorite.svg";
 import cartImage from "../../images/header/cart.svg";
 
@@ -16,9 +19,7 @@ const HeaderContent = () => {
     return (
         <Container>
             <header>
-                <Link to="/general" className="logo" id="logo">
-                    <h1>Qpick</h1>
-                </Link>
+            <Logo/>
                 <div className="header__items">
                     <div className="header__item header__item--favorite">
                         <Link to="/general">

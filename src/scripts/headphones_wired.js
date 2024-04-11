@@ -1,6 +1,6 @@
-import apple_byz_s852i from './images/headphones_wired/apple_byz_s852i.png';
-import apple_earpods from './images/headphones_wired/apple_earpods.png';
-import apple_earpods_box from './images/headphones_wired/apple_earpods_box.png'
+import apple_byz_s852i from '../images/headphones_wired/apple_byz_s852i.png';
+import apple_earpods from '../images/headphones_wired/apple_earpods.png';
+import apple_earpods_box from '../images/headphones_wired/apple_earpods_box.png'
 
 const headphonesWired = [
     {

@@ -1,6 +1,6 @@
-import apple_airpods from './images/heaphones_wireless/apple_airpods.png';
-import gerlax_gh_04 from './images/heaphones_wireless/gerlax_gh_04.png'
-import borofone_bo4 from './images/heaphones_wireless/borofone_bo4.png';
+import apple_airpods from '../images/heaphones_wireless/apple_airpods.png';
+import gerlax_gh_04 from '../images/heaphones_wireless/gerlax_gh_04.png'
+import borofone_bo4 from '../images/heaphones_wireless/borofone_bo4.png';
 
 const headphonesWireless = [
     {
